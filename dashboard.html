@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="studentlogin.css">
+
+  </head>
+<body>
+
+  <div class="top-bar">
+    <h2><i class="fas fa-user-graduate me-2"></i>Welcome, Student</h2>
+    <button onclick="logout()" class="logout-btn">
+      <i class="fas fa-sign-out-alt me-1"></i> Logout
+    </button>
+  </div>
+
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h3>Your Personal Student Dashboard</h3>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <i class="fas fa-book fa-2x mb-3"></i>
+          <h5>Subjects</h5>
+          <p class="mb-0">View enrolled subjects</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="fas fa-chart-line fa-2x mb-3"></i>
+          <h5>Performance</h5>
+          <p class="mb-0">Track your progress</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="fas fa-calendar-alt fa-2x mb-3"></i>
+          <h5>Timetable</h5>
+          <p class="mb-0">See your class schedule</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      alert("You have been logged out.");
+      window.location.href = "studentlogin.html"; // Change to your login page
+    }
+  </script>
+
+</body>
+</html>
